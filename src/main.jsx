@@ -9,8 +9,8 @@ import Root from './conponents/Root';
 import Home from './conponents/Home';
 import AddProduct from './conponents/AddProduct';
 import MyCart from './conponents/MyCart';
-import Login from './conponents/Login';
-import Register from './conponents/Register';
+// import Login from './conponents/Login';
+// import Register from './conponents/Register';
 
 const router = createBrowserRouter([
   {
@@ -29,14 +29,14 @@ const router = createBrowserRouter([
         path: '/myCart',
         element: <MyCart></MyCart>
       },
-      {
-        path: '/login',
-        element: <Login></Login>
-      },
-      {
-        path: '/register',
-        element: <Register></Register>
-      }
+      // {
+      //   path: '/login',
+      //   element: <Login></Login>
+      // },
+      // {
+      //   path: '/register',
+      //   element: <Register></Register>
+      // }
     ]
   },
 ]);
