@@ -1,0 +1,194 @@
+[
+  {
+    "brand": "TOYOTA",
+    "name": "xx50",
+    "price": 29999.99,
+    "rating": 4.5,
+    "img": "https://i.ibb.co/4749KWg/toyota-xx50.jpg",
+    "description": "For the most accurate and up-to-date information about Toyota's latest models, including the XX50 if it has been released, I recommend visiting the official Toyota website or contacting a Toyota dealership in your area. They will be able to provide you with the most recent details about their vehicle lineup, including any new models or updates."
+  },
+  {
+    "brand": "TOYOTA",
+    "name": "g60",
+    "price": 39555.99,
+    "rating": 4.2,
+    "img": "https://i.ibb.co/CvnXCWS/toyota-g60.jpg",
+    "description": "The TOYOTA G60 designation might be specific to a certain region or market. For the most accurate and recent information, contacting a Toyota dealership, or checking with a reliable automotive news source for the latest updates on Toyota's vehicle lineup."
+  },
+  {
+    "brand": "TOYOTA",
+    "name": "E210",
+    "price": 48529.99,
+    "rating": 4.8,
+    "img": "https://i.ibb.co/jRr4tt2/toyota-e210.jpg",
+    "description": "The Toyota E210 is a part of the 12th generation Toyota Corolla, which was introduced in March 2018. The E210 designation specifically refers to the sedan version of the Corolla, which is one of the most popular and best-selling cars in the world."
+  },
+  {
+    "brand": "TOYOTA",
+    "name": "jpd20",
+    "price": 55429.99,
+    "rating": 4.3,
+    "img": "https://i.ibb.co/pnf2c9L/toyota-jpd20.jpg",
+    "description": "Toyota Mirai (JPD20). 2020 to date (prod. n/a). 5-door sedan. R/R, 136 kW–1·24 kWh hydrogen–electric. Second generation of Toyota’s pioneering hydrogen-powered car, now on TNGA GA-L platform, shared with Crown."
+  },
+  {
+    "brand": "FORD",
+    "name": "Kuga",
+    "price": 68859.99,
+    "rating": 4.6,
+    "img": "https://i.ibb.co/j9t2trN/ford-kuga.jpg",
+    "description": "The Ford Kuga is a popular compact SUV (sports utility vehicle) produced by the American automaker Ford. Below are some general details about the Ford Kuga, but please note that specific features and specifications might vary based on the model year and the market it's sold in."
+  },
+  {
+    "brand": "FORD",
+    "name": "Edge",
+    "price": 723439.99,
+    "rating": 4.1,
+    "img": "https://i.ibb.co/6mRj60k/ford-edge.jpg",
+    "description": "The Ford Edge is a midsize crossover SUV that has been in production since 2006. Below are some key details about the Ford Edge model.The Ford Edge is a five-door SUV with a sleek and modern design."
+  },
+  {
+    "brand": "FORD",
+    "name": "Mustang",
+    "price": 25489.99,
+    "rating": 4.7,
+    "img": "https://i.ibb.co/3FXQFn5/ford-mustang.jpg",
+    "description": "The Ford Mustang is an iconic American sports car that has been in production since 1964. As of my last update in September 2021, I can provide you with general details about the Ford Mustang. Please note that there might have been updates or new versions released since that time."
+  },
+  {
+    "brand": "FORD",
+    "name": "Escort",
+    "price": 93549.99,
+    "rating": 4.4,
+    "img": "https://i.ibb.co/gPCrZsN/ford-escort.jpg",
+    "description": "The Ford Escort is a well-known compact car that was produced by the Ford Motor Company. It was initially introduced in Europe in 1968 and became one of Ford's best-selling models. The Escort was sold in various body styles, including sedan, hatchback, and wagon, and it underwent several generations of redesigns throughout its production history"
+  },
+  {
+    "brand": "BMW",
+    "name": "x5",
+    "price": 10659.99,
+    "rating": 4.9,
+    "img": "https://i.ibb.co/QK9yK5L/bmw-x5.jpg",
+    "description": "The BMW X5 is a luxury midsize SUV (Sports Utility Vehicle) manufactured by the German automaker BMW. It was first introduced in 1999 and has since become one of BMW's most popular SUV models. The X5 is known for its powerful performance, luxurious interior, and advanced technology features."
+  },
+  {
+    "brand": "BMW",
+    "name": "3 Series",
+    "price": 156719.99,
+    "rating": 4.0,
+    "img": "https://i.ibb.co/gFGN3mC/BMW-X3.jpg",
+    "description": "The BMW 3 Series is a line of compact luxury cars manufactured by the German automaker BMW. Since its introduction in 1975, the 3 Series has been a popular choice among consumers seeking a balance of performance, luxury, and practicality.here are some general details about the BMW 3 Series. "
+  },
+  {
+    "brand": "BMW",
+    "name": "4 Series",
+    "price": 12329.99,
+    "rating": 4.5,
+    "img": "https://i.ibb.co/RbrGqFz/bmw-x4.jpg",
+    "description": "The BMW 4 Series is a series of compact luxury cars manufactured by the German automaker BMW. As of my last update in September 2021, the 4 Series is available in different body styles, including coupe, convertible, and gran coupe (a four-door coupe-like variant)."
+  },
+  {
+    "brand": "BMW",
+    "name": "5 Series",
+    "price": 15639.99,
+    "rating": 4.2,
+    "img": "https://i.ibb.co/QK9yK5L/bmw-x5.jpg",
+    "description": "The BMW 5 Series is a line of midsize luxury sedans and executive cars manufactured by the German automaker BMW. Known for its elegant design, high-performance capabilities, and advanced technology, the 5 Series has been a popular choice among luxury car enthusiasts. As of my last update in September 2021,"
+  },
+  {
+    "brand": "MERCEDES-BENZ",
+    "name": "Coupe",
+    "price": 14359.99,
+    "rating": 4.8,
+    "img": "https://i.ibb.co/7NWpMXt/Mercedes-coupe.jpg",
+    "description": "Mercedes-Benz offers a range of coupe models, each designed with luxury, performance, and advanced technology in mind. As of my last update in September 2021, here are some general details about Mercedes-Benz coupes. Please note that there might have been updates or new models released since then."
+  },
+  {
+    "brand": "MERCEDES-BENZ",
+    "name": "Sedan",
+    "price": 15439.99,
+    "rating": 4.3,
+    "img": "https://i.ibb.co/c6BFXjR/Mercedes-Benz-sedan.jpg",
+    "description": "Mercedes-Benz, a renowned German luxury automobile manufacturer, offers a wide range of sedans catering to various preferences and needs. While my information is current up to September 2021, here are some general details about Mercedes-Benz sedans, keeping in mind that newer models may have been released since then."
+  },
+  {
+    "brand": "MERCEDES-BENZ",
+    "name": "Suv",
+    "price": 16923.99,
+    "rating": 4.6,
+    "img": "https://i.ibb.co/2hhZnkd/MERCEDES-BENZ-suv.jpg",
+    "description": "Mercedes-Benz offers a range of SUVs, each catering to different needs and preferences. As of my last update in September 2021, here are details about some of the popular Mercedes-Benz SUV models. Please note that there might have been updates or new releases since that time."
+  },
+  {
+    "brand": "MERCEDES-BENZ",
+    "name": "Evs",
+    "price": 17239.99,
+    "rating": 4.1,
+    "img": "https://i.ibb.co/KDLstzc/MERCEDES-BENZ-evs.jpg",
+    "description": "As of my last update in September 2021, Mercedes-Benz, like many other automakers, was actively expanding its lineup of electric vehicles (EVs) as part of its commitment to sustainable mobility. While I don't have specific details on models released after that date, I can provide you with a general overview of Mercedes-Benz's approach to electric vehicles based on their previous initiatives."
+  },
+  {
+    "brand": "TESLA",
+    "name": "Model S",
+    "price": 18499.99,
+    "rating": 4.7,
+    "img": "https://i.ibb.co/Fqqhj4Q/tesla-model-S.png",
+    "description": "As of my last update in September 2021, the Tesla Model S was an electric luxury sedan produced by Tesla, Inc. Known for its high-performance electric drivetrain, cutting-edge technology, and impressive range, the Model S represented a significant milestone in the electric vehicle (EV) industry"
+  },
+  {
+    "brand": "TESLA",
+    "name": "Model 3",
+    "price": 19984.99,
+    "rating": 4.4,
+    "img": "https://i.ibb.co/J7Z56sM/Tesla-Model-3.jpg",
+    "description": "As of my last update in September 2021, the Tesla Model 3 is an all-electric compact sedan produced by Tesla, Inc. It's one of Tesla's most popular and affordable electric vehicles, known for its impressive range, performance, and advanced technology features. Here are some key details about the Tesla Model 3"
+  },
+  {
+    "brand": "TESLA",
+    "name": "Model X",
+    "price": 20239.99,
+    "rating": 4.9,
+    "img": "https://i.ibb.co/tsjf5gc/tesla-model-x.jpg",
+    "description": "The Tesla Model X is an all-electric luxury SUV manufactured by Tesla, Inc. It was first introduced in 2015 and has become known for its impressive performance, cutting-edge technology, and distinctive falcon-wing rear doors. As of my last update in September 2021, here are some key details about the Tesla Model X"
+  },
+  {
+    "brand": "TESLA",
+    "name": "Model Y",
+    "price": 21259.99,
+    "rating": 4.0,
+    "img": "https://i.ibb.co/3YXrCpv/tesla-model-y.jpg",
+    "description": "The Tesla Model Y is an all-electric compact SUV produced by Tesla, Inc., an American electric vehicle and clean energy company. The Model Y was officially unveiled in March 2019 and started deliveries in March 2020. As of my last update in September 2021, here are the general details about the Tesla Model Y"
+  },
+  {
+    "brand": "HONDA",
+    "name": "Passport",
+    "price": 22349.99,
+    "rating": 4.5,
+    "img": "https://i.ibb.co/M9DXJg9/Honda-Passport.jpg",
+    "description": "The Honda Passport is a midsize crossover SUV produced by the Japanese automaker Honda. It was first introduced in 1993 and was later discontinued in 2002. In 2019, Honda revived the Passport nameplate and released a new version of the SUV, aimed at the North American market. Here are the general details about the revived Honda Passport (2019 onwards) based on information available up until my last update in September 2021:"
+  },
+  {
+    "brand": "HONDA",
+    "name": "Pilot",
+    "price": 23239.99,
+    "rating": 4.2,
+    "img": "https://i.ibb.co/Kmry4t9/Honda-Pilot.jpg",
+    "description": "The Honda Pilot is typically equipped with a V6 engine that provides a good balance of power and fuel efficiency. It usually comes with front-wheel drive as standard and offers all-wheel drive as an option for enhanced traction and stability, especially in adverse weather conditions."
+  },
+  {
+    "brand": "HONDA",
+    "name": "CR-V",
+    "price": 24679.99,
+    "rating": 4.8,
+    "img": "https://i.ibb.co/PtQ860n/honda-cr-v.jpg",
+    "description": "The Honda CR-V is a popular compact crossover SUV manufactured by Honda since 1995. Known for its reliability, practicality, and comfortable interior, the CR-V has been a staple in Honda's lineup for years. As of my last update in September 2021, here are some general details about the Honda CR-V. Please note that there might have been updates or new versions released since then."
+  },
+  {
+    "brand": "HONDA",
+    "name": "HR-V",
+    "price": 25579.99,
+    "rating": 4.3,
+    "img": "https://i.ibb.co/fdh6rT2/honda-hr-v.jpg",
+    "description": "The Honda HR-V is a subcompact crossover SUV produced by Honda, the Japanese automaker. It was first introduced in 1998 and has since become a popular choice in the subcompact SUV market. As of my last update in September 2021, here are the general details about the Honda HR-V. Please note that there might have been updates or new versions released since then."
+  }
+]

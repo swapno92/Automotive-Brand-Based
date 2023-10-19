@@ -9,6 +9,7 @@ import MyCart from "./conponents/MyCart";
 import Login from "./conponents/Login";
 import Register from "./conponents/Register";
 import AuthProvider from "./Providers/AuthProvider";
+import Brands from "./conponents/Products";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/brands/:name",
+        element: <Brands></Brands>,
+        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.name}`),
       },
     ],
   },

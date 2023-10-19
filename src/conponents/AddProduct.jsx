@@ -1,22 +1,47 @@
 // import React from 'react';
+// import { AiOutlineStar } from "react-icons/ai";
+// import {  useLoaderData } from "react-router-dom";
 
 const AddProduct = () => {
-  const handleAdded = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const brand = form.brand.value;
-    const name = form.name.value;
-    const price = form.price.value;
-    const ratting = form.ratting.value;
-    const img = form.img.value;
-    const description = form.description.value;
+  // const handleAdded = (e) => {
+  //   e.preventDefault();
+  //   const form = e.target;
+  //   const brand = form.brand.value;
+  //   const name = form.name.value;
+  //   const price = form.price.value;
+  //   const ratting = form.ratting.value;
+  //   const img = form.img.value;
+  //   const description = form.description.value;
 
-    console.log(brand, brand, name, price, ratting, img, description);
-  };
+  //   console.log(brand, brand, name, price, ratting, img, description);
+  // };
+
+
 
   return (
-    <div className="">
-      <form onSubmit={handleAdded}>
+    <>
+      {/* details */}
+      {/* <div className="rounded p-8 shadow-inner">
+        <img
+          src="https://i.ibb.co/hZywjnD/BMW-logo.jpg"
+          alt=""
+          className="lg:w-3/5 w-11/12 h-[60vh] mx-auto rounded-lg shadow-2xl my-6"
+        />
+        <p className=" font-semibold text-justify lg:w-3/5 mx-auto ">
+          <span className="underline font-bold">Details:</span> {}
+        </p>
+        <div className=" flex justify-center">
+          <button className="text-center  px-4 py-1 rounded-lg btn-accent mt-4">
+            <Link to="/">Add to Cart</Link>
+          </button>
+        </div>
+      </div> */}
+
+
+
+      {/* ......................... */}
+      {/* add to card */}
+      {/* <form onSubmit={handleAdded}>
         <div className="my-4  py-3 rounded-lg border border-purple-500">
           <h2 className="text-center text-3xl font-bold font-serif text-gray-600">
             Add Product
@@ -90,10 +115,11 @@ const AddProduct = () => {
             </button>
           </div>
         </div>
-      </form>
+      </form> */}
+      {/* .................... */}
 
       {/* carousel */}
-      {/* <div className="carousel w-full mx-auto">
+      {/* <div className="carousel w-full mx-auto my-6">
         <div
           id="slide1"
           className="carousel-item relative h-[350px] w-full line mx-auto mx-12 "
@@ -140,7 +166,9 @@ const AddProduct = () => {
           </div>
         </div>
       </div> */}
-    </div>
+
+
+    </>
   );
 };
 
