@@ -9,7 +9,8 @@ import MyCart from "./conponents/MyCart";
 import Login from "./conponents/Login";
 import Register from "./conponents/Register";
 import AuthProvider from "./Providers/AuthProvider";
-import Brands from "./conponents/Products";
+import ProductDetails from "./conponents/ProductDetails";
+import Products from "./conponents/Products";
 
 const router = createBrowserRouter([
   {
@@ -39,8 +40,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/brands/:name",
-        element: <Brands></Brands>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.name}`),
+        element: <Products></Products>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/products/${params.name}`),
+      },
+      {
+        path: "/product/:id",
+        element: <ProductDetails></ProductDetails>,
+        loader: ({ params }) => fetch(`http://localhost:5000/products/details/${params.id}`),
       },
     ],
   },
