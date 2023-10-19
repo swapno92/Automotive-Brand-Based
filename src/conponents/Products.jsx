@@ -2,6 +2,7 @@
 
 import { useLoaderData } from "react-router-dom";
 import Product from "./Product";
+import ErrorPage from "./ErrorPage";
 
 const Products = () => {
   const products = useLoaderData();
@@ -11,15 +12,15 @@ const Products = () => {
     <div>
       <div className="bg-gray-100">
         <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-8 gap-10 ">
-          { products.length == 0 ? 
-          (
-          <div>404444444444444444444444444444444444444444444444444</div>
-          )
-           :
-          products.map((product) => (
-            <Product key={product._id} product={product}></Product>
-          ))
-          }
+          {products.length == 0 ? (
+            <div className=" w-full col-span-3">
+              <ErrorPage></ErrorPage>
+              </div>
+          ) : (
+            products.map((product) => (
+              <Product key={product._id} product={product}></Product>
+            ))
+          )}
         </div>
       </div>
     </div>
