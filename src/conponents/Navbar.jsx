@@ -1,18 +1,19 @@
 // import React from 'react';
 
-// import { useContext } from "react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { AuthContext } from "../Providers/AuthProvider";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Navbar = () => {
 
-    // const { user, logOut } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
+    console.log(user)
 
-    // const handleLogOut = () => {
-    //     logOut()
-    //         .then(() => console.log('user looged out'))
-    //         .catch(error => console.error(error))
-    // }
+    const handleLogOut = () => {
+        logOut()
+            .then(() => console.log('user looged out'))
+            .catch(error => console.error(error))
+    }
 
     const items = <>
         <li className="text-xl font-semibold"><NavLink to='/'>Home</NavLink></li>
@@ -41,20 +42,20 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {/* { */}
-                    {/* // user ?  */}
+                {
+                    user ?
                     < >
-                            <img className="w-10 h-10 rounded-full" src='https://i.ibb.co/xj73ghG/wedding.jpg' />
-                        <span className="mx-3 bg-gray-300 px-2 py-3 rounded lg">user name</span>
+                            <img className="w-10 h-10 rounded-full" src={user.photoURL} />
+                        <span className="mx-3 bg-gray-300 px-2 py-3 rounded lg">{user.displayName}</span>
                         <a 
-                        // onClick={handleLogOut} 
+                        onClick={handleLogOut} 
                         className="btn font-semibold">Sign Out</a>
                     </>
-                        {/* // : */}
+                        :
                         <Link to="/login">
                             <button className="btn font-semibold">Login</button>
                         </Link>
-                {/* // } */}
+                 }
 
             </div>
         </div>
