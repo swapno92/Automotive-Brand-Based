@@ -15,6 +15,11 @@ const Home = () => {
   const brands = useLoaderData();
   console.log(brands);
 
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+
   return (
     <div>
       <Banner></Banner>
