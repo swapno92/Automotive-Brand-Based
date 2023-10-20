@@ -11,11 +11,14 @@ import Register from "./conponents/Register";
 import AuthProvider from "./Providers/AuthProvider";
 import ProductDetails from "./conponents/ProductDetails";
 import Products from "./conponents/Products";
+import Update from "./conponents/Update";
+import ErrorPage from "./conponents/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -47,7 +50,14 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <ProductDetails></ProductDetails>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/details/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/products/details/${params.id}`),
+      },
+      {
+        path: "/update/:id",
+        element: <Update></Update>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/products/details/${params.id}`),
       },
     ],
   },

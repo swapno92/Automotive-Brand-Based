@@ -30,9 +30,9 @@ const Product = ({ product }) => {
           >
             Details
           </Link>
-          <button className=" mt-2 px-6 py-1 rounded font-semibold text-xl bg-yellow-100 border border-yellow-500">
+          <Link to={`/update/${_id}`} className=" mt-2 px-6 py-1 rounded font-semibold text-xl bg-yellow-100 border border-yellow-500">
             Update
-          </button>
+          </Link>
         </div>
       </div>
     </>

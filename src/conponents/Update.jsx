@@ -2,10 +2,11 @@
 // import { AiOutlineStar } from "react-icons/ai";
 // import {  useLoaderData } from "react-router-dom";
 
-import { data } from "autoprefixer";
+import { useLoaderData } from "react-router-dom";
 
-const AddProduct = () => {
-  const handleAdded = (e) => {
+const Update = () => {
+    const data = useLoaderData()
+  const handleUpdated = (e) => {
     e.preventDefault();
     const form = e.target;
     const brand = form.brand.value;
@@ -16,8 +17,8 @@ const AddProduct = () => {
     const description = form.description.value;
     // console.log(brand, name, price, ratting, img, description);
     const user = { brand, name, price, ratting, img, description };
-    fetch("http://localhost:5000/products", {
-      method: "POST",
+    fetch(`http://localhost:5000/products/${data._id}`, {
+      method: "PUT",
       headers: {
         "content-type": "application/json",
       },
@@ -31,59 +32,8 @@ const AddProduct = () => {
 
   return (
     <>
-      {/* carousel */}
-      {/* <div className=" w-[90%] mx-auto line"> */}
-      {/* <div className="carousel  w-full">
-          <div
-            id="slide1"
-            className="carousel-item relative h-[350px] w-full "
-          >
-            <img src="/images/images.png" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide2" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          <div
-            id="slide2"
-            className="carousel-item relative h-[350px] w-full  "
-          >
-            <img src="/images/images.png" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" className="btn btn-circle">
-                {" "}
-                ❮
-              </a>
-              <a href="#slide3" className="btn btn-circle">
-                {" "}
-                ❯
-              </a>
-            </div>
-          </div>
-
-          <div
-            id="slide3"
-            className="carousel-item relative h-[350px] w-full "
-          >
-            <img src="/images/images.png" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide1" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-        </div> */}
-      {/* </div> */}
-
       {/* add to card */}
-      <form onSubmit={handleAdded}>
+      <form onSubmit={handleUpdated}>
         <div className="my-4  py-3 rounded-lg border border-purple-500">
           <h2 className="text-center text-3xl font-bold font-serif text-gray-600">
             Add Product
@@ -130,7 +80,7 @@ const AddProduct = () => {
                 name="ratting"
                 id=""
                 placeholder="Ratting"
-                defaultValue={data.ratting}
+                defaultValue={data.rating}
               />
             </div>
             <div className="space-y-1 mt-8">
@@ -150,7 +100,6 @@ const AddProduct = () => {
                 className="border border-gray-300 rounded-lg pt-8 md:w-[85%] w-[90%] pl-8 md:ml-0 ml-4"
                 name="description"
                 id=""
-                // cols="lg:65"
                 rows="4"
                 placeholder="Short Description"
                 defaultValue={data.description}
@@ -168,4 +117,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default Update;
