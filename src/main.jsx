@@ -13,6 +13,7 @@ import ProductDetails from "./conponents/ProductDetails";
 import Products from "./conponents/Products";
 import Update from "./conponents/Update";
 import ErrorPage from "./conponents/ErrorPage";
+import PrivateRoute from "./conponents/PrivateRoute";
 // import { GiTesla } from "react-icons/gi";
 
 const router = createBrowserRouter([
@@ -28,11 +29,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/addProduct",
-        element: <AddProduct></AddProduct>,
+        element: (
+          <PrivateRoute>
+            <AddProduct></AddProduct>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/myCart",
-        element: <MyCart></MyCart>,
+        element: (
+          <PrivateRoute>
+            <MyCart></MyCart>
+          </PrivateRoute>
+        ),
         loader: () => fetch("http://localhost:5000/curt"),
       },
       {
@@ -51,13 +60,21 @@ const router = createBrowserRouter([
       },
       {
         path: "/product/:id",
-        element: <ProductDetails></ProductDetails>,
+        element: (
+          <PrivateRoute>
+            <ProductDetails></ProductDetails>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/products/details/${params.id}`),
       },
       {
         path: "/update/:id",
-        element: <Update></Update>,
+        element: (
+          <PrivateRoute>
+            <Update></Update>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/products/details/${params.id}`),
       },
@@ -72,7 +89,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </AuthProvider>
   </React.StrictMode>
 );
-
-
-
-

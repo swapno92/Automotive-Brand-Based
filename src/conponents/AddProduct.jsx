@@ -16,6 +16,7 @@ const AddProduct = () => {
     const description = form.description.value;
     // console.log(brand, name, price, ratting, img, description);
     const user = { brand, name, price, ratting, img, description };
+    
     fetch("http://localhost:5000/products", {
       method: "POST",
       headers: {
@@ -26,6 +27,7 @@ const AddProduct = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        alert('complite')
       });
   };
 

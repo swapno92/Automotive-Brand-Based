@@ -3,6 +3,7 @@
 // import {  useLoaderData } from "react-router-dom";
 
 import { useLoaderData } from "react-router-dom";
+import swal from "sweetalert";
 
 const Update = () => {
     const data = useLoaderData()
@@ -27,6 +28,10 @@ const Update = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        swal({
+          title: "Success!",
+          text: "Product Updated Successful",
+        });
       });
   };
 
@@ -36,7 +41,7 @@ const Update = () => {
       <form onSubmit={handleUpdated}>
         <div className="my-4  py-3 rounded-lg border border-purple-500">
           <h2 className="text-center text-3xl font-bold font-serif text-gray-600">
-            Add Product
+            Update Product
           </h2>
           <div className="grid md:grid-cols-2 grid-cols-1  md:px-16">
             <div className="space-y-1 mt-8 ">
@@ -76,7 +81,7 @@ const Update = () => {
               <h3 className="text-lg font-semibold ml-4">Ratting...</h3>
               <input
                 className="input input-bordered md:w-[85%] w-[90%] pl-8 md:ml-0 ml-4"
-                type="number"
+                
                 name="ratting"
                 id=""
                 placeholder="Ratting"
@@ -108,7 +113,7 @@ const Update = () => {
           </div>
           <div className=" flex justify-center items-center mt-8">
             <button className=" bg-gray-700 text-white rounded-lg px-12 py-3">
-              Add Product
+              Update Product
             </button>
           </div>
         </div>

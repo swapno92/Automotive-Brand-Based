@@ -2,6 +2,7 @@
 
 // import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
+import swal from "sweetalert";
 
 const ProductDetails = () => {
   const product = useLoaderData();
@@ -18,6 +19,10 @@ const ProductDetails = () => {
     })
       .then((res) => res.json())
       .then((data) => console.log(data));
+      swal({
+        title: "Success!",
+        text: "Product Added in My Cart",
+      });
   };
   // }, []);
 
