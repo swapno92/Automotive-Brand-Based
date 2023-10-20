@@ -7,7 +7,7 @@ import Curt from "./Curt";
 
 const MyCart = () => {
   const curts = useLoaderData();
-    console.log(curts)
+    // console.log(curts)
   //   const { img, brand, price, rating } = curt;
   return (
     <div>

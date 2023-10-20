@@ -3,7 +3,9 @@ import { AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-  const { _id, brand, name, price, rating, img, description } = product;
+  // console.log(product)
+
+  const { _id, brand, name, price, rating, img, description,type } = product;
   return (
     <>
       <div className=" py-4 bg-white shadow-lg rounded-md line">
@@ -23,6 +25,7 @@ const Product = ({ product }) => {
             <AiOutlineStar className="text-xl"></AiOutlineStar>
           </div>
         </div>
+          <h2 className="text-2xl font-semibold ml-8">Type:{type}</h2>
         <div className="flex justify-between  w-[90%] mx-auto px-4 mt-4">
           <Link
             to={`/product/${_id}`}
@@ -30,7 +33,10 @@ const Product = ({ product }) => {
           >
             Details
           </Link>
-          <Link to={`/update/${_id}`} className=" mt-2 px-6 py-1 rounded font-semibold text-xl bg-yellow-100 border border-yellow-500">
+          <Link
+            to={`/update/${_id}`}
+            className=" mt-2 px-6 py-1 rounded font-semibold text-xl bg-yellow-100 border border-yellow-500"
+          >
             Update
           </Link>
         </div>

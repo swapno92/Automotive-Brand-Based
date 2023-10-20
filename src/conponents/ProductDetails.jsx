@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router-dom";
 
 const ProductDetails = () => {
   const product = useLoaderData();
-  const { img, description } = product;
+  const { img, description ,type} = product;
 
   // useEffect(() => {
   const handleCurt = () => {
@@ -31,6 +31,9 @@ const ProductDetails = () => {
         />
         <p className=" font-semibold text-justify lg:w-3/5 mx-auto ">
           <span className="underline font-bold">Details:</span> {description}
+        </p>
+        <p className=" font-semibold text-justify lg:w-3/5 mx-auto mt-4">
+          <span className="underline font-bold">Type:</span> {type}
         </p>
         <div className=" flex justify-center">
           <button
