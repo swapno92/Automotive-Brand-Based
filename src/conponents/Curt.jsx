@@ -1,11 +1,12 @@
 // import React from 'react';
-import { AiOutlineStar } from "react-icons/ai";
-import { Link } from "react-router-dom";
 
-const Product = ({ product }) => {
-  const { _id, brand, name, price, rating, img, description } = product;
+import { AiOutlineStar } from "react-icons/ai";
+
+const Curt = ({ curt }) => {
+  const { img, brand, name, price, rating } = curt;
+  console.log(curt);
   return (
-    <>
+    <div>
       <div className=" py-4 bg-white shadow-lg rounded-md line">
         <div className="flex justify-center items-center">
           <img src={img} alt="" className="w-[90%] h-60 rounded-lg" />
@@ -23,20 +24,14 @@ const Product = ({ product }) => {
             <AiOutlineStar className="text-xl"></AiOutlineStar>
           </div>
         </div>
-        <div className="flex justify-between  w-[90%] mx-auto px-4 mt-4">
-          <Link
-            to={`/product/${_id}`}
-            className=" mt-2 px-6 py-1 rounded font-semibold text-xl bg-blue-100 border border-blue-500"
-          >
-            Details
-          </Link>
-          <Link to={`/update/${_id}`} className=" mt-2 px-6 py-1 rounded font-semibold text-xl bg-yellow-100 border border-yellow-500">
-            Update
-          </Link>
+        <div className="flex justify-center items-center mt-5">
+          <button className=" mt-2 px-6 py-1 rounded font-semibold text-xl bg-red-100 border border-red-500">
+            Delete
+          </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Product;
+export default Curt;

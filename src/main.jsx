@@ -13,6 +13,7 @@ import ProductDetails from "./conponents/ProductDetails";
 import Products from "./conponents/Products";
 import Update from "./conponents/Update";
 import ErrorPage from "./conponents/ErrorPage";
+// import { GiTesla } from "react-icons/gi";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/myCart",
         element: <MyCart></MyCart>,
+        loader: () => fetch("http://localhost:5000/curt"),
       },
       {
         path: "/login",
@@ -70,3 +72,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </AuthProvider>
   </React.StrictMode>
 );
+
+
+
+

@@ -1,8 +1,8 @@
-# React + Vite
+## website name : Automotive
+## website link : 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Five routes have been created on the website out of which two are Private Route.
+* If the user does not login, he will not able to see the details of the category.
+* The email of the logged in user will show in the navbar.
+* If logged in navbar will show sign out option and if not logged in will show log in option.
+* In addition to the email password, the website can be logged in trough the Google account.
