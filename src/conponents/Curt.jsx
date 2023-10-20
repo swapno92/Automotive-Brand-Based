@@ -31,7 +31,7 @@ const Curt = ({ curt }) => {
               Swal.fire("Deleted!", "Your Curt has been deleted.", "success");
             }
           });
-        console.log("deleted");
+          console.log("deleted");
       }
     });
   };
