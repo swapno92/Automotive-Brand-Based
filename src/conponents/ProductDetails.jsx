@@ -6,7 +6,9 @@ import swal from "sweetalert";
 
 const ProductDetails = () => {
   const product = useLoaderData();
-  const { img, description ,type} = product;
+  console.log(product);
+  const { img, description, type, rating, price, name, brand } = product;
+  const newProduct = { img, description, type, rating, price, name, brand };
 
   // useEffect(() => {
   const handleCurt = () => {
@@ -15,13 +17,15 @@ const ProductDetails = () => {
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(product),
+      body: JSON.stringify(newProduct),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
-      swal({
-        title: "Success!",
-        text: "Product Added in My Cart",
+      .then((data) => {
+        console.log(data);
+        swal({
+          title: "Success!",
+          text: "Product Added in My Cart",
+        });
       });
   };
   // }, []);
