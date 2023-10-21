@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/brands"),
+        loader: () => fetch("https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/brands"),
       },
       {
         path: "/addProduct",
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/curt"),
+        loader: () => fetch("https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/curt"),
       },
       {
         path: "/login",
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         path: "/brands/:name",
         element: <Products></Products>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.name}`),
+          fetch(`https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/products/${params.name}`),
       },
       {
         path: "/product/:id",
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/details/${params.id}`),
+          fetch(`https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/products/details/${params.id}`),
       },
       {
         path: "/update/:id",
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/details/${params.id}`),
+          fetch(`https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/products/details/${params.id}`),
       },
     ],
   },

@@ -18,7 +18,7 @@ const Update = () => {
     const description = form.description.value;
     // console.log(brand, name, price, ratting, img, description);
     const user = { brand, name, price, ratting, img, description };
-    fetch(`http://localhost:5000/products/${data._id}`, {
+    fetch(`https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/products/${data._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

@@ -5,7 +5,7 @@ import { AiOutlineStar } from "react-icons/ai";
 // import swal from "sweetalert";
 import Swal from "sweetalert2";
 
-const Curt = ({ curt }) => {
+const Curt = ({ curt, curts, setCurts }) => {
   // console.log(curt)
   const { _id, img, brand, name, price, rating } = curt;
 
@@ -22,16 +22,21 @@ const Curt = ({ curt }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         // Swal.fire("Deleted!", "Your Coffee has been deleted.", "success");
-        fetch(`http://localhost:5000/curt/${_id}`, {
-          method: "DELETE"
-        })
+        fetch(
+          `https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/curt/${_id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
               Swal.fire("Deleted!", "Your Curt has been deleted.", "success");
+              const remaining = curts.filter(crt => crt._id !== _id)
+              setCurts(remaining)
             }
           });
-          console.log("deleted");
+        console.log("deleted");
       }
     });
   };

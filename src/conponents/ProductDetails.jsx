@@ -12,7 +12,7 @@ const ProductDetails = () => {
 
   // useEffect(() => {
   const handleCurt = () => {
-    fetch("http://localhost:5000/curt", {
+    fetch("https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/curt", {
       method: "POST",
       headers: {
         "content-type": "application/json",
