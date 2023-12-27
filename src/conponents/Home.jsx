@@ -14,7 +14,7 @@ import BrandCard from "./BrandCard";
 const Home = () => {
   const brands = useLoaderData();
   // console.log(brands);
-  console.log(brands)
+  // console.log(brands)
 
   function myFunction() {
     var element = document.body;
