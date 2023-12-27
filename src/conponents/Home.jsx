@@ -14,6 +14,7 @@ import BrandCard from "./BrandCard";
 const Home = () => {
   const brands = useLoaderData();
   // console.log(brands);
+  console.log(brands)
 
   function myFunction() {
     var element = document.body;
@@ -28,7 +29,7 @@ const Home = () => {
       <section className="bg-gray-100 my-6 py-12 space-y-4">
         <h2 className="text-center font-serif text-5xl font-bold">Our Brand</h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 px-20">
-          {brands.map((brand) => (
+          {brands?.map((brand) => (
             <BrandCard key={brand._id} brand={brand}></BrandCard>
           ))}
         </div>

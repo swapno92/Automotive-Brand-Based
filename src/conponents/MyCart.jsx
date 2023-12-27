@@ -13,7 +13,7 @@ const MyCart = () => {
   //   const { img, brand, price, rating } = curt;
   return (
     <div>
-      <div className="bg-gray-100">
+      <div className="-10bg-gray0">
         <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-8 gap-10 ">
           {curts.map((curt) => (
             <Curt

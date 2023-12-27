@@ -17,7 +17,7 @@ const AddProduct = () => {
     // console.log(brand, name, price, ratting, img, description);
     const user = { brand, name, price, ratting, img, description };
     
-    fetch("https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/products", {
+    fetch("https://assignment-ten-server-virid.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

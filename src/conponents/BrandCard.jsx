@@ -4,6 +4,7 @@
 import { Link } from "react-router-dom";
 
 const BrandCard = ({ brand }) => {
+  // console.log(brand)
   const { brand_img, brand_name } = brand;
   return (
     <>

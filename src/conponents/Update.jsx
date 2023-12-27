@@ -18,7 +18,7 @@ const Update = () => {
     const description = form.description.value;
     // console.log(brand, name, price, ratting, img, description);
     const user = { brand, name, price, ratting, img, description };
-    fetch(`https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/products/${data._id}`, {
+    fetch(`https://assignment-ten-server-virid.vercel.app/products/${data._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -81,7 +81,7 @@ const Update = () => {
               <h3 className="text-lg font-semibold ml-4">Ratting...</h3>
               <input
                 className="input input-bordered md:w-[85%] w-[90%] pl-8 md:ml-0 ml-4"
-                
+                type="number"
                 name="ratting"
                 id=""
                 placeholder="Ratting"

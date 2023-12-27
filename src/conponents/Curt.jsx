@@ -6,7 +6,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import Swal from "sweetalert2";
 
 const Curt = ({ curt, curts, setCurts }) => {
-  // console.log(curt)
+  console.log(curt)
   const { _id, img, brand, name, price, rating } = curt;
 
   const handleDelete = (_id) => {
@@ -23,7 +23,7 @@ const Curt = ({ curt, curts, setCurts }) => {
       if (result.isConfirmed) {
         // Swal.fire("Deleted!", "Your Coffee has been deleted.", "success");
         fetch(
-          `https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/curt/${_id}`,
+          `https://assignment-ten-server-virid.vercel.app/curt/${_id}`,
           {
             method: "DELETE",
           }

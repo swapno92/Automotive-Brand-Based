@@ -3,7 +3,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-  // console.log(product)
+  console.log(product)
 
   const { _id, brand, name, price, rating, img, description,type } = product;
   return (
@@ -21,7 +21,7 @@ const Product = ({ product }) => {
             Price: $<span>{price}</span>
           </h2>
           <div className="flex items-center">
-            <p className="font-semibold text-xl">{rating}&nbsp;</p>
+            <p className="font-semibold text-xl">{rating} &nbsp;</p>
             <AiOutlineStar className="text-xl"></AiOutlineStar>
           </div>
         </div>

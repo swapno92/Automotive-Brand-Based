@@ -16,10 +16,10 @@ const Products = () => {
   const names = useParams();
   console.log(names);
   useEffect(() => {
-    fetch(`https://assignment-ten-server-obv1rxclj-swapno92.vercel.app/brands/${names.name}`)
+    fetch(`https://assignment-ten-server-virid.vercel.app/brands/${names.name}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setSliders(data);
       });
   }, []);
