@@ -1,5 +1,9 @@
 ## website name : Automotive
 ## website link : https://assignment-ten-f5536.web.app/
+## server site repo : https://github.com/swapno92/Automotive-Brand-Based-Server
+
+## 💻 Using Technologies for this project
+[![My Skills](https://skillicons.dev/icons?i=js,react,firebase,nodejs,mongodb,tailwind,html,vite)](https://skillicons.dev)
 
 * Five routes have been created on the website out of which two are Private Route.
 * If the user does not login, he will not able to see the details of the category.
