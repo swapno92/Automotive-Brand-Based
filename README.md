@@ -1,5 +1,5 @@
 ## website name : Automotive
-## website link : https://assignment-ten-f5536.web.app/
+## website link : https://659178d49d7cd11a248d52d2--delightful-sunburst-0de72c.netlify.app/
 ## server site repo : https://github.com/swapno92/Automotive-Brand-Based-Server
 
 ## 💻 Using Technologies for this project
